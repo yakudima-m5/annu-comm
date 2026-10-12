@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quality phone gadgets at affordable prices from Annu Comm.">
+    <title>Annu Comm | Phone Gadgets</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #f5f7fb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-width: 320px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            padding: 1.25rem max(1.5rem, calc((100% - 1100px) / 2));
+            background: #fff;
+            border-bottom: 1px solid #e6eaf0;
+        }
+
+        h1 {
+            margin: 0;
+            color: #2457d6;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #35415a;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a:focus-visible {
+            color: #2457d6;
+            text-decoration: underline;
+            text-underline-offset: 0.25em;
+        }
+
+        nav a:focus-visible,
+        .button:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #f0b429;
+            outline-offset: 3px;
+        }
+
+        main {
+            width: min(100% - 3rem, 1100px);
+            margin: 3rem auto;
+        }
+
+        section {
+            padding: clamp(2rem, 6vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            background: #fff;
+            border: 1px solid #e6eaf0;
+            border-radius: 1rem;
+        }
+
+        section:first-child {
+            color: #fff;
+            background: #2457d6;
+            border: 0;
+        }
+
+        .hero {
+            padding-block: clamp(3rem, 9vw, 6rem);
+        }
+
+        .hero p {
+            margin-bottom: 1.5rem;
+            color: #e4ebff;
+            font-size: 1.1rem;
+        }
+
+        .button,
+        button {
+            display: inline-block;
+            padding: 0.8rem 1.15rem;
+            border: 0;
+            border-radius: 0.55rem;
+            background: #fff;
+            color: #1945b3;
+            font: inherit;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .button:hover,
+        button:hover {
+            background: #eaf0ff;
+        }
+
+        h2 {
+            margin: 0 0 0.75rem;
+            font-size: clamp(1.6rem, 4vw, 2.25rem);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+            gap: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        article {
+            overflow: hidden;
+            border: 1px solid #e6eaf0;
+            border-radius: 0.75rem;
+            background: #fff;
+        }
+
+        article img {
+            display: block;
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            background: #eef2f8;
+        }
+
+        article h3,
+        article p {
+            margin-inline: 1rem;
+        }
+
+        article h3 {
+            margin-top: 1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        article p {
+            margin-bottom: 1rem;
+            color: #2457d6;
+            font-weight: 700;
+        }
+
+        form {
+            display: grid;
+            gap: 0.65rem;
+            max-width: 620px;
+            margin-top: 1.5rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.8rem 0.9rem;
+            border: 1px solid #cbd3e0;
+            border-radius: 0.5rem;
+            color: inherit;
+            font: inherit;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        form button {
+            justify-self: start;
+            margin-top: 0.5rem;
+            background: #2457d6;
+            color: #fff;
+        }
+
+        form button:hover {
+            background: #1945b3;
+        }
+
+        p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 1.5rem;
+            color: #58647a;
+            text-align: center;
+        }
+
+        @media (max-width: 520px) {
+            header {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Annu Comm</h1>
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+            <a href="#location">Location</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero" aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Welcome to Annu Comm</h2>
+            <p>Quality phone gadgets at affordable prices.</p>
+            <a class="button" href="#products">Shop Now</a>
+        </section>
+
+        <section id="products" aria-labelledby="products-heading">
+            <h2 id="products-heading">Our Products</h2>
+            <div class="product-grid">
+                <article>
+                    <img src="images/charger.jpg" alt="Phone charger" loading="lazy">
+                    <h3>Chargers</h3>
+                    <p>Price: ₦5,000</p>
+                </article>
+                <article>
+                    <img src="images/earpiece.jpg" alt="Phone earpiece" loading="lazy">
+                    <h3>Earpieces</h3>
+                    <p>Price: ₦8,000</p>
+                </article>
+                <article>
+                    <img src="images/power-bank.jpg" alt="Phone power bank" loading="lazy">
+                    <h3>Power Banks</h3>
+                    <p>Price: ₦15,000</p>
+                </article>
+                <article>
+                    <img src="images/phone-case.jpg" alt="Phone case" loading="lazy">
+                    <h3>Phone Cases</h3>
+                    <p>Price: ₦3,000</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Annu Comm</h2>
+            <form method="post">
+<label for="name">Your Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="location" aria-labelledby="location-heading">
+            <h2 id="location-heading">Our Location</h2>
+            <p>Shop Address: __________________</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Annu Comm</p>
+    </footer>
+</body>
+</html>
